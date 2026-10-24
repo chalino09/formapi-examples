@@ -3,6 +3,8 @@
 Create a free account at https://getformapi.com/en, verify your email and create a form.
 Replace `https://getformapi.com/f/YOUR_FORM_ID` in app/page.tsx with your public endpoint. This identifier is public, not an authentication key.
 
+Alternatively set `NEXT_PUBLIC_FORMAPI_ENDPOINT` in `.env.local` before building. This endpoint is public. Never place private keys in `NEXT_PUBLIC_` variables.
+
 Run `npm install` then `npm run dev`. Build with `npm run build` before deployment.
 
 This example uses JavaScript for inline errors. Translate labels and messages to match your website. For Spanish HTML redirects add `?lang=es` to the endpoint if switching to a traditional form POST.

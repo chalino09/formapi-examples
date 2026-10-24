@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-const endpoint = "https://getformapi.com/f/YOUR_FORM_ID";
+const endpoint = process.env.NEXT_PUBLIC_FORMAPI_ENDPOINT || "https://getformapi.com/f/YOUR_FORM_ID";
 export default function Contact() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState("");
