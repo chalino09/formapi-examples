@@ -1,0 +1,4 @@
+interface:
+  display_name: "FormAPI integration"
+  short_description: "Connect website forms and verify real receipt"
+  default_prompt: "Use $formapi-integration to connect this contact form to my FormAPI endpoint and verify receipt in an authorized QA inbox."

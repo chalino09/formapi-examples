@@ -1,0 +1,9 @@
+---
+import "../styles.css";
+---
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact · Astro FormAPI starter</title></head><body><main><h1>Let’s talk about your project.</h1><p>Send a message. We’ll get back to you by email.</p><form id="contact" action="https://getformapi.com/f/YOUR_FORM_ID" method="POST" novalidate>
+  <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="email-error"><p class="field-error" id="email-error"></p></div>
+  <div><label for="message">Message</label><textarea id="message" name="message" maxlength="5000" required aria-describedby="message-error"></textarea><p class="field-error" id="message-error"></p></div>
+  <input type="text" name="website" hidden tabindex="-1" autocomplete="off">
+  <button type="submit">Send message</button><p role="status" aria-live="polite" id="status"></p>
+</form><noscript>JavaScript is required for this example.</noscript></main><script>import "../scripts/formapi.js";</script></body></html>
